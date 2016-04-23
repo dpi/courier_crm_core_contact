@@ -40,3 +40,12 @@ configuration is broken. Go to https://www.drupal.org/node/2711935 to fix._
  3. Ensure a 'Primary email field' is configured. If not, then add an email
     field from the 'Manage fields' tab. Then return to configure the primary
     email field.
+
+## RNG
+
+_Optional integration with [RNG](https://drupal.org/project/rng) allows you to
+register for RNG events._
+
+ 1. Go to Administration » Configuration » RNG (/admin/config/rng/registrant)
+ 2. Enable the 'CRM Core Contact' checkbox.
+ 3. Save the form.
