@@ -14,7 +14,7 @@ use Drupal\courier\Exception\IdentityException;
  *   id = "identity:crm_core_contact:courier_email",
  *   label = @Translation("CRM Core contact to courier_mail"),
  *   channel = "courier_email",
- *   identity = "crm_core_contact",
+ *   identity = "crm_core_individual",
  *   weight = 10
  * )
  */

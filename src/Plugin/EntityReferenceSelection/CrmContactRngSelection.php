@@ -10,7 +10,7 @@ use Drupal\rng\Plugin\EntityReferenceSelection\RNGSelectionBase;
  * @EntityReferenceSelection(
  *   id = "rng:register:crm_core_contact",
  *   label = @Translation("CRM Core contact selection"),
- *   entity_types = {"crm_core_contact"},
+ *   entity_types = {"crm_core_individual"},
  *   group = "rng_register",
  *   provider = "courier_crm_core_contact",
  *   weight = 10
