@@ -37,9 +37,13 @@ class CrmContactRngSelection extends RNGSelectionBase {
       $query->condition($group);
     }
 
-    // Select contacts owned by the user.
     if ($this->currentUser->isAuthenticated()) {
-      $query->condition('uid', $this->currentUser->id(), '=');
+      // Check permission to access any contacts
+      $view_any_permission = 'view any ' . $this->entityType->id() . ' entity';
+      if (!$this->currentUser->hasPermission($view_any_permission)) {
+        // Select contacts owned by the user.
+        $query->condition('uid', $this->currentUser->id(), '=');
+      }
     }
     else {
       // Cancel the query.
